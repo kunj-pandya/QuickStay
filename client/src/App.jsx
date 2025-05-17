@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import AllRooms from './pages/AllRooms';
 import RoomDetails from './pages/RoomDetails';
 import MyBookings from './pages/MyBookings';
+import HotelReg from './components/HotelReg';
 
 const App = () => {
   const IsOwnerPath = useLocation().pathname.includes("owner");
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <div className="min-h-screen flex flex-col">
       { !IsOwnerPath && <Navbar /> }
+      {false && <HotelReg />}
 
       {/* Page content grows to fill remaining height */}
       <main className="flex-1">
