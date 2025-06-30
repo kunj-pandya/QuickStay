@@ -28,6 +28,6 @@ const roomSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 
-const room = mongoose.model("Room", roomSchema);
+const Room = mongoose.model("Room", roomSchema);
 
 export default Room;

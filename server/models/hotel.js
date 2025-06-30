@@ -3,24 +3,24 @@ import mongoose from "mongoose";
 const hotelSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: ture
+        required: true
     },
     address: {
         type: String,
-        required: ture
+        required: true
     },
     contect: {
         type: String,
-        required: ture
+        required: true
     },
     owners: {
         type: String,
-        required: ture,
+        required: true,
         ref: "User"
     },
     city: {
         type: String,
-        required: ture
+        required: true
     },
 }, { timestamps: true });
 
