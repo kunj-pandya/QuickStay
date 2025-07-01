@@ -9,14 +9,14 @@ const hotelSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    contect: {
+    contact: {
         type: String,
         required: true
     },
-    owners: {
+    owner: {
         type: String,
+        ref: "User",
         required: true,
-        ref: "User"
     },
     city: {
         type: String,
